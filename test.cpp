@@ -20,6 +20,8 @@
 	#include <curses.h>
 #elif __APPLE__
 	#include <ncurses.h>
+#elif __linux__
+	#include <ncurses.h>
 #endif
 
 int main()

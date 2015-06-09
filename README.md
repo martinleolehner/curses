@@ -2,10 +2,17 @@
 This repository shows some possibilities of curses.
 
 ## Compilation on Mac OS X
-ncurses should be preinstalled on Mac OS X. Compile with -lncurses.
+ncurses should be preinstalled on Mac OS X.
 
-    $ clang++ -o Snake -lncurses snake.cpp
-    $ g++ -o Snake -lncurses snake.cpp
+    $ clang++ -std=c++11 -stdlib=libc++ -lncurses -o Snake snake.cpp
+
+## Compilation on Linux
+### Install ncurses
+    $ sudo apt-get install libncurses5-dev
+
+### Compilation with g++
+
+    $ g++ -std=c++0x -lncurses -o Snake snake.cpp
 
 ## Compilation on Windows
 ### Install pdcurses

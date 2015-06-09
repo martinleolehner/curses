@@ -20,7 +20,10 @@
 	#include <curses.h>
 #elif __APPLE__
 	#include <ncurses.h>
+#elif __linux__
+	#include <ncurses.h>
 #endif
+
 #include <list>
 #include <stdlib.h>
 #include <math.h>
